@@ -32,8 +32,8 @@ graalvmNative {
     }
     binaries {
         main {
-            imageName = 'NativeCommands'
-            mainClass = 'com.intel.swiss.commands.MainCommand'
+            imageName = 'TestMockito'
+            mainClass = 'org.example.Main'
             javaLauncher = javaToolchains.launcherFor {
                 languageVersion = JavaLanguageVersion.of(17)
             }
@@ -61,6 +61,7 @@ graalvmNative {
                     "-Xmx2G",
                     "-Xms2G"
             )
+            enableExperimentalPredefinedClasses = true
         }
     }
 }
