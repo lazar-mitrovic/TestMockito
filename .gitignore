@@ -1,0 +1,6 @@
+sources/**
+build/**
+test-results-*/**
+.gradle/**
+.idea/**
+META-INF/
